@@ -44,7 +44,7 @@ export const metadata = {
       url: "https://tapet.io",
     },
   ],
-  creator: "shadcn",
+  creator: "tapet.io",
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "white" },
     { media: "(prefers-color-scheme: dark)", color: "black" },
