@@ -31,16 +31,17 @@ export const metadata = {
   },
   description: siteConfig.description,
   keywords: [
-    "Next.js",
-    "React",
-    "Tailwind CSS",
-    "Server Components",
-    "Radix UI",
+    "AI",
+    "Artificial Intelligence",
+    "Machine Learning",
+    "Recruiting",
+    "Hiring",
+    "Job Search"
   ],
   authors: [
     {
-      name: "shadcn",
-      url: "https://shadcn.com",
+      name: "art",
+      url: "https://tapet.io",
     },
   ],
   creator: "shadcn",

@@ -4,7 +4,7 @@ import { env } from "@/env.mjs"
 export const freePlan: SubscriptionPlan = {
   name: "Free",
   description:
-    "The free plan is limited to 3 posts. Upgrade to the PRO plan for unlimited posts.",
+    "The free plan is limited to 3 resume reviews. Upgrade to the PRO plan for unlimited reviews.",
   stripePriceId: "",
 }
 

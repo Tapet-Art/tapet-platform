@@ -1,10 +1,9 @@
 {
-  "name": "taxonomy",
+  "name": "art",
   "version": "0.2.0",
   "private": true,
   "author": {
-    "name": "shadcn",
-    "url": "https://twitter.com/shadcn"
+    "name": "Tapet"
   },
   "scripts": {
     "dev": "concurrently \"contentlayer dev\" \"next dev\"",
@@ -13,9 +12,12 @@
     "start": "next start",
     "lint": "next lint",
     "preview": "next build && next start",
-    "postinstall": "prisma generate"
+    "postinstall": "prisma generate",
+    "prepDB": "npx prisma db push"
   },
   "dependencies": {
+    "@ffmpeg/core": "^0.11.0",
+    "@ffmpeg/ffmpeg": "^0.11.6",
     "@editorjs/code": "^2.8.0",
     "@editorjs/editorjs": "^2.26.5",
     "@editorjs/embed": "^2.5.3",
@@ -28,6 +30,7 @@
     "@hookform/resolvers": "^3.1.0",
     "@next-auth/prisma-adapter": "^1.0.6",
     "@prisma/client": "^4.13.0",
+    "@headlessui/react": "^1.7.14",
     "@radix-ui/react-accessible-icon": "^1.0.2",
     "@radix-ui/react-accordion": "^1.1.1",
     "@radix-ui/react-alert-dialog": "^1.0.3",
@@ -62,12 +65,13 @@
     "@vercel/og": "^0.0.21",
     "class-variance-authority": "^0.4.0",
     "clsx": "^1.2.1",
+    "encoding": "^0.1.13",
     "cmdk": "^0.1.22",
     "concurrently": "^8.0.1",
     "contentlayer": "^0.3.1",
     "date-fns": "^2.29.3",
     "lucide-react": "^0.92.0",
-    "next": "13.3.2-canary.13",
+    "next": "13.4.4",
     "next-auth": "4.22.1",
     "next-contentlayer": "^0.3.1",
     "next-themes": "^0.2.1",
@@ -77,15 +81,25 @@
     "react": "^18.2.0",
     "react-day-picker": "^8.7.1",
     "react-dom": "^18.2.0",
+    "@upstash/ratelimit": "^0.4.2",
+    "@upstash/redis": "^1.20.6",
     "react-editor-js": "^2.1.0",
     "react-hook-form": "^7.43.9",
     "react-textarea-autosize": "^8.4.1",
+    "react-webcam": "^7.0.1",
     "sharp": "^0.31.3",
     "shiki": "^0.11.1",
     "stripe": "^11.18.0",
     "tailwind-merge": "^1.12.0",
     "tailwindcss-animate": "^1.0.5",
-    "zod": "^3.21.4"
+    "zod": "^3.21.4",
+    "uuidv4": "^6.2.13",
+    "openai": "^3.2.1",
+    "eventsource-parser": "^1.0.0",
+    "framer-motion": "^10.12.5",
+    "formidable": "^2.1.1",
+    "@types/node": "20.2.5",
+    "typescript": "5.0.4"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.1",
@@ -116,7 +130,8 @@
     "remark": "^14.0.2",
     "remark-gfm": "^3.0.1",
     "tailwindcss": "^3.3.1",
-    "typescript": "4.7.4",
-    "unist-util-visit": "^4.1.2"
+    "typescript": "5.0.4",
+    "unist-util-visit": "^4.1.2",
+    "@types/formidable": "^2.0.5"
   }
 }
