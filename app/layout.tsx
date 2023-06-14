@@ -1,6 +1,6 @@
 import { Inter as FontSans } from "next/font/google"
 import localFont from "next/font/local"
-
+import SupabaseProvider from '@/app/supabase-provider';
 import "@/styles/globals.css"
 import { siteConfig } from "@/config/site"
 import { absoluteUrl, cn } from "@/lib/utils"
@@ -83,12 +83,14 @@ export default function RootLayout({ children }: RootLayoutProps) {
           fontHeading.variable
         )}
       >
+        <SupabaseProvider>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
           <Analytics />
           <Toaster />
           <TailwindIndicator />
         </ThemeProvider>
+        </SupabaseProvider>
       </body>
     </html>
   )
