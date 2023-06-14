@@ -1,4 +1,4 @@
-import { withContentlayer } from "next-contentlayer"
+// import { withContentlayer } from "next-contentlayer"
 
 import "./env.mjs"
 
@@ -12,6 +12,12 @@ const nextConfig = {
     appDir: true,
     serverComponentsExternalPackages: ["@prisma/client"],
   },
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.fallback.fs = false
+    }
+    return config
+  }
 }
 
-export default withContentlayer(nextConfig)
+export default nextConfig

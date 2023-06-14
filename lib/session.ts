@@ -1,9 +1,13 @@
-import { getServerSession } from "next-auth/next"
+import {
+  getSession,
+  getUserDetails,
+  getSubscription
+} from '@/app/supabase-server';
 
-import { authOptions } from "@/lib/auth"
+// import { authOptions } from "@/lib/auth"
 
 export async function getCurrentUser() {
-  const session = await getServerSession(authOptions)
+  const session = await getSession()
 
   return session?.user
 }
