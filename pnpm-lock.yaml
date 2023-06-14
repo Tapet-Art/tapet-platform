@@ -134,6 +134,9 @@ dependencies:
   '@radix-ui/react-tooltip':
     specifier: ^1.0.6
     version: 1.0.6(@types/react-dom@18.2.4)(@types/react@18.2.7)(react-dom@18.2.0)(react@18.2.0)
+  '@stripe/stripe-js':
+    specifier: ^1.54.0
+    version: 1.54.0
   '@supabase/auth-helpers-nextjs':
     specifier: ^0.7.2
     version: 0.7.2(@supabase/supabase-js@2.25.0)
@@ -2605,6 +2608,10 @@ packages:
 
   /@stitches/core@1.2.8:
     resolution: {integrity: sha512-Gfkvwk9o9kE9r9XNBmJRfV8zONvXThnm1tcuojL04Uy5uRyqg93DC83lDebl0rocZCfKSjUv+fWYtMQmEDJldg==}
+    dev: false
+
+  /@stripe/stripe-js@1.54.0:
+    resolution: {integrity: sha512-nElTXkS+nMfDNMkWfLmyeqHQfMGJ1JjrjAVMibV61Oc/rYdUv0cKRYCi1l4ivZ5SySB3vQLcLolxbKBkbNznZA==}
     dev: false
 
   /@supabase/auth-helpers-nextjs@0.7.2(@supabase/supabase-js@2.25.0):
